@@ -19,7 +19,7 @@
     "lint:fix": "eslint --fix --ext .ts,.tsx ."
   },
   "dependencies": {
-    "@taccl/loader": "github:corcc/loader#dist",
+    "@corcc/loader": "github:corcc/loader#dist",
     "@types/node": "^17.0.10",
     "node": "^17.3.1",
     "ts-node": "^10.4.0",
