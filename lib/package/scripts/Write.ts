@@ -4,7 +4,7 @@ import { loadScripts } from './Load';
 import { parseScripts, ScriptsType } from './Parse';
 export function writeScripts (scripts?: ScriptsType) {
 	let s = scripts;
-	s = s ?? loadScripts();
+	s = s ?? loadScripts().scripts;
 	s = parseScripts(s);
 	let pkg: any = {};
 	pkg = loadPackageJson();
