@@ -21,7 +21,6 @@
   "dependencies": {
     "@corcc/loader": "github:corcc/loader#dist",
     "@types/node": "^17.0.10",
-    "node": "^17.3.1",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.5"
   },
