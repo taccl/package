@@ -13,10 +13,11 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "build:tsc": "tsc",
+    "config:scripts": "ts-node ./config/scripts",
     "build:dist": "tsc",
-    "lint:run": "eslint",
-    "lint:fix": "eslint --fix --ext .ts,.tsx ."
+    "build:tsc": "tsc",
+    "lint:fix": "eslint --fix --ext .ts --ext .tsx .",
+    "lint:check": "eslint --ext .ts --ext .tsx ."
   },
   "dependencies": {
     "@corcc/loader": "github:corcc/loader#dist",

@@ -19,9 +19,11 @@ jobs:
     - name: Checkout 🛎️
       uses: actions/checkout@master
     - name: Install 🟢
-      run: npm install
+      run: yarn install
+    - name: Config => Scripts 🔧
+      run: yarn config:scripts
     - name: Build 🔧
-      run: npm run build:dist
+      run: yarn build:dist
     - uses: corcc/publish@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
