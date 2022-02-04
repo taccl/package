@@ -2,10 +2,6 @@ name: Build
 on: 
   workflow_dispatch:
   push:
-    branches:
-      - node-typescript
-    paths-ignore:
-      - '**.md'
 jobs:
   build:
     name: Build 🔧
@@ -27,7 +23,5 @@ jobs:
     - uses: corcc/publish@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        TASK_NAME: 'Autobuild dist'
-        FORCE: true
-        BRANCH_NAME: 'dist'
+        TASK_NAME: '🔧'
         TIMEZONE: 'Asia/Tokyo'
